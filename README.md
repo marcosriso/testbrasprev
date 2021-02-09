@@ -1,6 +1,8 @@
 # testebrasprev
 Developer Test from Brasprev
 
+### Automated Tests: Will be added tomorrow 2021-02-10
+
 ## Configurations
 Clone the project and then run mvn clean install from the command line. Then run springboot with mvn spring-boot:run
 You should have a postgresql database installed.
