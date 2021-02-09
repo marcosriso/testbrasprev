@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ClientsRepository extends CrudRepository<Clients, Long> {
     List<Clients> findAll();
+
+    Clients findByNome(String username);
 }
