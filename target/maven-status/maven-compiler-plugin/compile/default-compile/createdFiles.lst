@@ -1,0 +1,9 @@
+br\com\brasilprev\TesteBrasilPrev\domain\Users.class
+br\com\brasilprev\TesteBrasilPrev\repositories\UsersRepository.class
+br\com\brasilprev\TesteBrasilPrev\domain\Clients.class
+br\com\brasilprev\TesteBrasilPrev\services\ClientsService.class
+br\com\brasilprev\TesteBrasilPrev\services\UsersService.class
+br\com\brasilprev\TesteBrasilPrev\restAPI\ClientsController.class
+br\com\brasilprev\TesteBrasilPrev\repositories\ClientsRepository.class
+br\com\brasilprev\TesteBrasilPrev\TesteBrasilPrevApplication.class
+br\com\brasilprev\TesteBrasilPrev\restAPI\UserController.class
