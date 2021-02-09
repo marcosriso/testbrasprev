@@ -1,7 +1,8 @@
 # testebrasprev
 Developer Test from Brasprev
 
-### Automated Tests: Will be added tomorrow 2021-02-10
+### Automated Tests:
+Added 4 simple unit tests for demonstration purposes.
 
 ## Configurations
 Clone the project and then run mvn clean install from the command line. Then run springboot with mvn spring-boot:run
