@@ -1,0 +1,33 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:latest
+    network_mode: bridge
+    container_name: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    expose:
+      - 6432
+    ports:
+      - 6432:5432
+    environment:
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=testbrasprev
+    restart: unless-stopped
+  # APP*****************************************
+  testbrasprev:
+    image: testbrasprev:latest
+    network_mode: bridge
+    container_name: testbrasprev
+    expose:
+      - 8080
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    links:
+      - postgres
+volumes:
+  postgres-data:
