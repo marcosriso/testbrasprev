@@ -1,6 +1,31 @@
 # testebrasprev
 Developer Test from Brasprev
 
+## Deployed at AWS cloud using Docker.
+First of all, create an user using POSTMAN, just make a post call to:
+
+[POST] http://ec2-3-208-24-30.compute-1.amazonaws.com:8080/api/v1/user
+
+{
+	"username": "yourusername",
+	"password": "yourpass"
+}
+
+Then, login at 
+http://ec2-3-208-24-30.compute-1.amazonaws.com:8080/api/v1/login
+
+With the same object.
+
+Then add the header authorization to your calls, with the HEADER authorization that is returned from the server.
+I'm using JWT for authentication.
+
+Then, make a GET call to:
+
+[GET] http://ec2-3-208-24-30.compute-1.amazonaws.com:8080/api/v1/users
+
+Try adding or deleting clients, as the information below details.
+
+
 ### Automated Tests:
 Added 4 simple unit tests for demonstration purposes.
 
