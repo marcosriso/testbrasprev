@@ -1,5 +1,5 @@
-# testebrasprev
-Developer Test from Brasprev
+# Spring REST API Example
+Based on the developer test from Brasprev
 
 ## Deployed at AWS cloud using Docker.
 First of all, create an user using POSTMAN, just make a post call to:
